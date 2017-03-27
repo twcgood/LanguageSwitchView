@@ -8,21 +8,21 @@
     tools:context="com.leisure.tang.languageswitchview.MainActivity"
     android:orientation="vertical">
 
-    <com.leisure.tang.languageswitchview.LSTextView
+    <com.leisure.tang.languageswitchviewlibrary.LSTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/test"/>
-    <com.leisure.tang.languageswitchview.LSButton
+    <com.leisure.tang.languageswitchviewlibrary.LSButton
         android:id="@+id/LSBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/test"/>
-    <com.leisure.tang.languageswitchview.LSEditText
+    <com.leisure.tang.languageswitchviewlibrary.LSEditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/test"/>
 
-    <com.leisure.tang.languageswitchview.LSImageView
+    <com.leisure.tang.languageswitchviewlibrary.LSImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/loginbackground"/>

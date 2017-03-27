@@ -1,4 +1,4 @@
-package com.leisure.tang.languageswitchview;
+package com.leisure.tang.languageswitchviewlibrary;
 
 import android.app.Activity;
 import android.content.Context;

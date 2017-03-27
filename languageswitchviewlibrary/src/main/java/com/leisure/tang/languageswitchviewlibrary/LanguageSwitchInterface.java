@@ -1,4 +1,4 @@
-package com.leisure.tang.languageswitchview;
+package com.leisure.tang.languageswitchviewlibrary;
 
 import android.support.annotation.ArrayRes;
 import android.support.annotation.StringRes;
@@ -16,13 +16,13 @@ public interface LanguageSwitchInterface {
     String ANDROIDXML = "http://schemas.android.com/apk/res/android";
 
     //手动设置textId
-    void setTextById (@StringRes int id);
+    void setTextById(@StringRes int id);
 
     //手动去掉textId,不然重新加载语言的时候会被重置掉
-    void setTextWithString (String text);
+    void setTextWithString(String text);
 
     //手动通过TextArray设置语言
-    void setTextByArrayAndIndex (@ArrayRes int arrId, @StringRes int arrIndex);
+    void setTextByArrayAndIndex(@ArrayRes int arrId, @StringRes int arrIndex);
 
     //修改语言时主要调用的方法
     void reLoadLanguage();

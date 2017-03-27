@@ -1,8 +1,10 @@
 package com.leisure.tang.languageswitchview;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.leisure.tang.languageswitchviewlibrary.LSUtil;
 
 import java.util.Locale;
 

@@ -1,4 +1,4 @@
-package com.leisure.tang.languageswitchview;
+package com.leisure.tang.languageswitchviewlibrary;
 
 import android.content.Context;
 import android.support.annotation.ArrayRes;

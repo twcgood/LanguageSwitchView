@@ -1,31 +1,32 @@
-package com.leisure.tang.languageswitchview;
+package com.leisure.tang.languageswitchviewlibrary;
 
 import android.content.Context;
 import android.support.annotation.ArrayRes;
 import android.support.annotation.StringRes;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import android.widget.Button;
 
 /**
- * 作者：tangwenchao on 2017/3/27 0027 11:46
+ * 作者：tangwenchao on 2017/3/27 0027 13:32
  * 邮箱：tangwenchao@kinenjoy.com
  */
-public class LSTextView extends TextView implements LanguageSwitchInterface {
+public class LSButton extends Button implements LanguageSwitchInterface{
     private int textId ;//文字id
     private int hintId ;//hint的id
     private int arrResId,arrResIndex;
 
-    public LSTextView(Context context) {
+    //  app:fontStyle="light" medium
+    public LSButton(Context context) {
         super(context);
         init(context, null);
     }
 
-    public LSTextView(Context paramContext, AttributeSet paramAttributeSet) {
+    public LSButton(Context paramContext, AttributeSet paramAttributeSet) {
         super(paramContext, paramAttributeSet);
         init(paramContext, paramAttributeSet);
     }
 
-    public LSTextView(Context paramContext, AttributeSet paramAttributeSet, int paramInt) {
+    public LSButton(Context paramContext, AttributeSet paramAttributeSet, int paramInt) {
         super(paramContext, paramAttributeSet, paramInt);
         init(paramContext, paramAttributeSet);
     }
@@ -40,7 +41,7 @@ public class LSTextView extends TextView implements LanguageSwitchInterface {
             String textValue = attributeSet.getAttributeValue(ANDROIDXML, "text");
             if (!(textValue==null || textValue.length()<2)) {
                 //如果是 android:text="@string/testText"
-                //textValue会长这样 @156878785,去掉@号就是资源id
+                //textValue会是 @0x7f080000,去掉@号就是资源id
                 textId = LSUtil.string2int(textValue.substring(1,textValue.length()));
             }
 
